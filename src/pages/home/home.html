@@ -1,14 +1,23 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      HorMinkapp
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+	<ion-list>
+		<ion-list-header>Zona 1</ion-list-header>
+	
+		<ion-item>
+			<ion-label>Led</ion-label>
+			<ion-toggle [(ngModel)]="toggleLed" (ionChange)="verled()" checked="false"></ion-toggle>
+		</ion-item>
+
+		<ion-item>
+			<ion-label>Bombillo</ion-label>
+			<ion-toggle [(ngModel)]="toggleRelay" (ionChange)="verrelay()" checked="false"></ion-toggle>
+		</ion-item>
+	</ion-list>
 </ion-content>
