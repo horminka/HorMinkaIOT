@@ -20,7 +20,9 @@
     <ion-row>
       <ion-col>
         <div class="circulo" [class.bombillo-off]="!toggleRelay" [class.bombillo-on]="toggleRelay">Bombillo</div>
-        <ion-toggle color="bombillo-on" class="boton" [(ngModel)]="toggleRelay" (ionChange)="verrelay()" checked="false"></ion-toggle>
+        <div class="controles">
+          <ion-toggle color="bombillo-on" class="boton" [(ngModel)]="toggleRelay" (ionChange)="verrelay()" checked="false"></ion-toggle>
+        </div>
       </ion-col>
     </ion-row>
   </ion-grid>
